@@ -1,0 +1,45 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add header Cart button and basic /cart page",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "summary": "Add an accessible Cart icon button in the SiteHeader top-right that remains usable on desktop and mobile without breaking the existing responsive nav/sheet behavior.",
+      "acceptanceCriteria": [
+        "On desktop widths, a Cart icon/button is visible in the SiteHeader aligned to the right side of the header row.",
+        "The Cart option is accessible via keyboard navigation and includes an sr-only label like \"Cart\".",
+        "The existing desktop navigation links (Home/Products/Farms/About/Contact) continue to display and function as before.",
+        "On mobile widths, the header continues to show the menu toggle; Cart remains reachable (either as a visible icon in the header or as an item in the mobile sheet menu), and navigation remains usable."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/layout/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Add a top-right Cart icon button that navigates to \"/cart\" using TanStack Router Link, with an sr-only label for accessibility, ensuring it does not disrupt the current desktop nav or the mobile Sheet menu toggle. Use existing shadcn-ui Button/Sheet components for consistent styling and interaction; verify the component's usage instructions before implementing. Ensure Cart remains reachable on mobile (keep it visible in the header actions area and/or include it as an item inside the mobile Sheet nav)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Create a basic Cart page and register a /cart route so the header Cart button navigates to a dedicated cart screen with an English empty-state message.",
+      "acceptanceCriteria": [
+        "Navigating to \"/cart\" renders a Cart page without errors.",
+        "Clicking the header Cart option navigates to \"/cart\".",
+        "The Cart page shows a clear empty-state message in English (e.g., \"Your cart is empty.\") and fits the existing Farm2Retail visual styling."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CartPage.tsx",
+          "operation": "create",
+          "description": "Create a Cart page component styled consistently with existing pages (use the standard container and typography patterns) and render an English empty-state message such as \"Your cart is empty.\". If using any shadcn-ui components (e.g., Card/Button), verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register a new TanStack Router route for path \"/cart\" that renders CartPage, and wire it into the existing route tree so navigation from the header Cart button works as expected."
+        }
+      ]
+    }
+  ]
+}

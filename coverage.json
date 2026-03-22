@@ -1,0 +1,53 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-16T15:26:41.584Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Add a Cart option (icon button) to the site header, positioned on the top-right side and visible from all pages. The Cart option must be accessible (screen-reader label) and must not break the existing responsive header behavior (desktop nav + mobile sheet menu).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/layout/SiteHeader.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/layout/SiteHeader.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Create a basic Cart page and route so that clicking the Cart option navigates to a dedicated cart screen (e.g., \"/cart\") with English user-facing text and an empty-state message.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/CartPage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/CartPage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/components/layout/SiteHeader.tsx",
+    "frontend/src/pages/CartPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

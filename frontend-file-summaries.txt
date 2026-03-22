@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with warm, earthy OKLCH color system (greens, browns, cream) for both light and dark modes, avoiding blue/purple as primary colors.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom font families (Poppins display, Inter sans), extended color tokens, custom shadows (soft, warm), and design system tokens.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining all routes including the new /cart route with SiteLayout as root.",
+  "frontend/src/components/layout/SiteLayout.tsx": "Shared layout wrapper component that renders SiteHeader, main content outlet, and SiteFooter for all pages.",
+  "frontend/src/components/layout/SiteHeader.tsx": "Responsive header with Farm2Retail logo, desktop navigation menu, cart icon button in top-right (visible on all screen sizes), and mobile sheet menu that includes cart link.",
+  "frontend/src/components/layout/SiteFooter.tsx": "Site footer with brand info, quick links, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/HomePage.tsx": "Home page with hero section featuring generated banner image, value propositions with icons, and CTAs linking to products and farms.",
+  "frontend/src/pages/ProductsPage.tsx": "Products listing page with search input, category filter dropdown, and responsive product card grid using React Query for data fetching.",
+  "frontend/src/pages/ProductDetailsPage.tsx": "Product details page showing full product information, image, pricing, stock status, description, and associated farm card with type-safe link using params.",
+  "frontend/src/pages/FarmsPage.tsx": "Farms listing page displaying all partner farms in a responsive grid using FarmCard components.",
+  "frontend/src/pages/FarmDetailsPage.tsx": "Farm details page showing farm profile, location, description, hero image, and all products from that farm.",
+  "frontend/src/pages/AboutPage.tsx": "About page explaining Farm2Retail mission, values (sustainability, community, transparency, quality), and how the platform works.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with contact information cards and a frontend-only form that displays confirmation message on submit without backend integration.",
+  "frontend/src/components/products/ProductCard.tsx": "Reusable product card component displaying product image, name, price, category badge, stock status, and view details button with type-safe routing using params.",
+  "frontend/src/components/farms/FarmCard.tsx": "Reusable farm card component showing farm image, name, location with map pin icon, description preview, and view farm button with type-safe routing using params.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations (getAllProducts, getProductById, getAllFarms, getFarmById, getProductsByFarmId) with proper caching and invalidation.",
+  "frontend/src/pages/CartPage.tsx": "Cart page component displaying an empty state with shopping cart icon, message \"Your cart is empty\", and a button to browse products."
+}

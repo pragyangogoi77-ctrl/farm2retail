@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a food website called Farm2Retail.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-the-farm2retail-website-shell-with-a-responsive-layout-header-main-content-footer-and-consistent-navigation-the-header-must-display-the-site-name-farm2retail-and-include-nav-links-to-home-products-farms-about-and-contact",
+      "title": "Create the Farm2Retail website shell with a responsive layout (header, main content, footer) and consistent navigation. The header must display the site name “Farm2Retail” and include nav links to Home, Products, Farms, About, and Contact.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-visual-theme-suitable-for-a-farm-to-retail-food-brand-and-apply-it-consistently-across-all-pages-colors-typography-spacing-button-styles-cards-avoid-blue-purple-as-primary-brand-colors",
+      "title": "Implement a coherent visual theme suitable for a farm-to-retail food brand and apply it consistently across all pages (colors, typography, spacing, button styles, cards). Avoid blue/purple as primary brand colors.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-products-page-that-loads-products-from-the-backend-and-supports-client-side-search-and-filtering-at-minimum-search-by-name-and-filter-by-category-display-products-in-a-responsive-card-grid-showing-image-name-price-unit-category-and-stock-status",
+      "title": "Build the Products page that loads products from the backend and supports client-side search and filtering (at minimum: search by name and filter by category). Display products in a responsive card grid showing image, name, price/unit, category, and stock status.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-product-details-page-that-displays-full-product-information-including-description-and-the-associated-farm-summary-and-provides-a-link-to-the-farm-details-page-for-that-farm",
+      "title": "Add a Product Details page that displays full product information (including description) and the associated farm summary, and provides a link to the Farm Details page for that farm.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-farms-page-that-lists-farms-from-the-backend-and-a-farm-details-page-that-shows-the-farm-profile-and-a-list-of-products-from-that-farm-derived-by-filtering-the-product-list-by-farmid",
+      "title": "Build the Farms page that lists farms from the backend and a Farm Details page that shows the farm profile and a list of products from that farm (derived by filtering the product list by farmId).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-home-about-and-contact-pages-with-english-user-facing-copy-appropriate-for-farm2retail-farm-to-retail-marketplace-concept-the-home-page-should-include-a-hero-section-and-clear-calls-to-action-linking-to-products-and-farms",
+      "title": "Create Home, About, and Contact pages with English user-facing copy appropriate for “Farm2Retail” (farm-to-retail marketplace concept). The Home page should include a hero section and clear calls to action linking to Products and Farms.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-static-image-assets-to-the-frontend-and-use-them-in-the-ui-logo-and-hero-banner-plus-a-small-set-of-product-farm-placeholders-store-generated-images-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend",
+      "title": "Add required static image assets to the frontend and use them in the UI (logo and hero/banner, plus a small set of product/farm placeholders). Store generated images under frontend/public/assets/generated and reference them directly from the frontend.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-cart-option-icon-button-to-the-site-header-positioned-on-the-top-right-side-and-visible-from-all-pages-the-cart-option-must-be-accessible-screen-reader-label-and-must-not-break-the-existing-responsive-header-behavior-desktop-nav-mobile-sheet-menu",
+      "title": "Add a Cart option (icon button) to the site header, positioned on the top-right side and visible from all pages. The Cart option must be accessible (screen-reader label) and must not break the existing responsive header behavior (desktop nav + mobile sheet menu).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-basic-cart-page-and-route-so-that-clicking-the-cart-option-navigates-to-a-dedicated-cart-screen-e-g-cart-with-english-user-facing-text-and-an-empty-state-message",
+      "title": "Create a basic Cart page and route so that clicking the Cart option navigates to a dedicated cart screen (e.g., \"/cart\") with English user-facing text and an empty-state message.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a food website named Farm2Retail.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add a backend data model and APIs to support browsing content for Farm2Retail: farms and products. Each product should include at minimum: id, name, category, price, unit, description, image URL (string), farmId, inStock (bool). Each farm should include at minimum: id, name, location, description, image URL (string). Provide query methods to list products, list farms, and fetch product/farm by id.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Seed the backend with a small set of example farms and products so the UI is populated on first load without requiring manual data entry.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add a Cart option/icon in the site header (top-right) accessible from all pages.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Farm2Retail",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "build_request",
+  "title": "Add Cart option in the site header (top-right)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "text": "Add a Cart option (icon button) to the site header, positioned on the top-right side and visible from all pages. The Cart option must be accessible (screen-reader label) and must not break the existing responsive header behavior (desktop nav + mobile sheet menu).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "add cart option on top right side"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On desktop widths, a Cart icon/button is visible in the SiteHeader aligned to the right side of the header row.",
+        "The Cart option is accessible via keyboard navigation and includes an sr-only label like \"Cart\".",
+        "The existing desktop navigation links (Home/Products/Farms/About/Contact) continue to display and function as before.",
+        "On mobile widths, the header continues to show the menu toggle; Cart remains reachable (either as a visible icon in the header or as an item in the mobile sheet menu), and navigation remains usable."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Create a basic Cart page and route so that clicking the Cart option navigates to a dedicated cart screen (e.g., \"/cart\") with English user-facing text and an empty-state message.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "add cart option on top right side"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigating to \"/cart\" renders a Cart page without errors.",
+        "Clicking the header Cart option navigates to \"/cart\".",
+        "The Cart page shows a clear empty-state message in English (e.g., \"Your cart is empty.\") and fits the existing Farm2Retail visual styling."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui."
+  ],
+  "nonGoals": [
+    "Implementing full cart functionality (add/remove items, quantities, totals, checkout, persistence).",
+    "Backend APIs or data model changes related to carts."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

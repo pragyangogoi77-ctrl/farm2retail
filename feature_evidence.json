@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-cart-option-icon-button-to-the-site-header-positioned-on-the-top-right-side-and-visible-from-all-pages-the-cart-option-must-be-accessible-screen-reader-label-and-must-not-break-the-existing-responsive-header-behavior-desktop-nav-mobile-sheet-menu",
+      "featureTitle": "Add a Cart option (icon button) to the site header, positioned on the top-right side and visible from all pages. The Cart option must be accessible (screen-reader label) and must not break the existing responsive header behavior (desktop nav + mobile sheet menu).",
+      "files": [
+        "frontend/src/components/layout/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-basic-cart-page-and-route-so-that-clicking-the-cart-option-navigates-to-a-dedicated-cart-screen-e-g-cart-with-english-user-facing-text-and-an-empty-state-message",
+      "featureTitle": "Create a basic Cart page and route so that clicking the Cart option navigates to a dedicated cart screen (e.g., \"/cart\") with English user-facing text and an empty-state message.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/CartPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
